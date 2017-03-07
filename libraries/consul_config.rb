@@ -64,7 +64,7 @@ module ConsulCookbook
       attribute(:enable_debug, equal_to: [true, false], default: false)
       attribute(:enable_syslog, equal_to: [true, false], default: false)
       attribute(:encrypt, kind_of: String)
-      attribute(:http_api_response_headers, kind_of: [Hash, Mash])
+      attribute(:http_api_response_headers, kind_of: [Hash, Mash], default: {})
       attribute(:key_file, kind_of: String)
       attribute(:leave_on_terminate, equal_to: [true, false], default: false)
       attribute(:log_level, equal_to: %w(INFO DEBUG WARN), default: 'INFO')
